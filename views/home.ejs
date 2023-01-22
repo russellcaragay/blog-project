@@ -1,4 +1,9 @@
 <%- include("partials/header"); %> 
 <h1>Home</h1>
 <p><%= homeInfo %> </p>
+<% for( let index = 0; index < publishedPost.length; index++ ) { %>
+    <p><%=publishedPost[index].title %></p><br>
+    <p><%=publishedPost[index].info%></p>
+<% } %>
+
 <%- include("partials/footer"); %> 
